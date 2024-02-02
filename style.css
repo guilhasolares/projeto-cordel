@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/*
+--caf-noir: #533e2dff;
+--golden-brown: #a27035ff;
+--lion: #b88b4aff;
+--citron: #ddca7dff;
+--vanilla: #f7e7a7ff;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
+/*font-family: 'Gaegu', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+/*font-family: 'M PLUS Rounded 1c', sans-serif;*/
+
+@font-face {
+    font-family: 'Havana';
+    src: 
+    url('fontes/Colonial\ Havana.otf') format('opentype'),
+    url('fontes/ColonialHavana-Clara.otf') format('opentype'),
+    url('fontes/HabanaColonial-Bold.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.root {
+    --caf-noir: #533e2dff;
+    --golden-brown: #a27035ff;
+    --lion: #b88b4aff;
+    --citron: #ddca7dff;
+    --vanilla: #f7e7a7ff;
+
+    --fontnormal: 'Gaegu', sans-serif;
+    --fontprincipal: 'Havana', sans-serif;
+    --fontsub: 'M PLUS Rounded 1c', sans-serif;
+}
