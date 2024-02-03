@@ -71,6 +71,52 @@
     }
 }
 
+@keyframes gum_estava {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: 100px -200px 0px white;
+
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+}
+@keyframes gum_pegada {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: -400px 200px 0px white;
+
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+}
+@keyframes gum_cara {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: 100px 200px 0px white;
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -250,6 +296,14 @@ div#v7 {
     position: relative;
 }
 
+div#v7 section {
+    
+
+
+}
+
+
+
 div#v7 div {
     position: absolute;
 
@@ -287,51 +341,6 @@ div#v7 p#esquerda {
     opacity: 0.3;
 }
 
-
-@keyframes gum_estava {
-    0% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
-    }
-    50% {
-        color: rgba(255, 255, 255, 0.1);
-        text-shadow: 100px -200px 0px white;
-
-    }
-    100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
-    }
-}
-@keyframes gum_pegada {
-    0% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
-    }
-    50% {
-        color: rgba(255, 255, 255, 0.1);
-        text-shadow: -400px 200px 0px white;
-
-    }
-    100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
-    }
-}
-@keyframes gum_cara {
-    0% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
-    }
-    50% {
-        color: rgba(255, 255, 255, 0.1);
-        text-shadow: 100px 200px 0px white;
-    }
-    100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
-    }
-}
 
 @keyframes opacity {
     0% {
