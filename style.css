@@ -23,6 +23,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    border: 1px dashed black;
 }
 
 :root {
@@ -34,75 +35,175 @@
 
     --fontprincipal: 'Havana', sans-serif;
     --fontnormal: 'M PLUS Rounded 1c', sans-serif;
+    
+    --tamanhofonte_h1: 10em;
+    --tamanhofonte_sub: 2em;
+    --tamanhofonte_p: 4em; 
+
 }
 
-@media (max-width: 1015px ) {
-    main {
-        font-size: 1em;
-    }
+strong.false {
+    font-weight: normal;
+    animation: strongfalse linear 10s both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
 }
-
-@media (max-width: 914px ) {
-    main {
-        font-size: .9em;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 712px) {
-    main {
-        font-size: .6em;
-    }
-} 
-
 
 body {
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 header {
     background-color: var(--cafe);
-    text-align: center;
-    padding-top: 50vh;
-    padding-bottom: 50vh;
-    font-size: 3em;
-    box-shadow: 4px 50px 50px 55px var(--cafe);
-
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    box-shadow: 0px 5x 5px #533e2dff;
 }
-
 header h1 {
     font-family: var(--fontprincipal);
-    color: var(--citron);
+    font-size: var(--tamanhofonte_h1);
+    color: var(--brown);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 header p {
     font-family: var(--fontnormal);
-    color: white;
-    font-size: .5em;
-}
-main {
-    font-family: var(--fontnormal);
-    background-color: transparent;
-}
-
-section {
-    position: relative;
-    padding-top: 50vh;
-    padding-bottom: 60vh;
-    border: 1px solid black;
-}
-section p { 
-    position: absolute;
-    color: white;
+    font-size: var(--tamanhofonte_sub);
+    color: var(--citron);
+    width: 90%;
+    margin: auto;
     text-align: center;
-    font-size: 2em;
-    padding: 10vh 30px 10vh 30px;
-    margin-right: 10vw;
-    background-color: rgba(105, 105, 105, 0.6);
-    border-radius: 20px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;    
+}
 
-    top: 50%;
-    left: 50%;
+div {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+}
 
-    transform: translate(-50%, -50%);
+div p {
+    font-family: var(--fontnormal);
+    font-size: var(--tamanhofonte_p);
+    padding-left: 30px;
+}
 
+div#v1 p {
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
 
+div#v2 p {
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: 100%;
+}
+
+div#v3 p {
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: 100%;
+}
+
+span {
+    font-family: var(--fontnormal),monospace;
+    margin-right: -20px;
+}
+
+span#principal::after {
+    content: "\00A0";
+}
+
+span#d {
+    animation: scale 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+span#o {
+    animation: scale 5s ease-in-out;
+    animation-timeline: view();
+    animation-delay: 1s;
+    animation-range: cover 0% cover 100%;
+}
+span#m {
+    animation: scale 5s ease-in-out;
+    animation-timeline: view();
+    animation-delay: 2s;
+    animation-range: cover 0% cover 100%;
+}
+span#i {
+    animation: scale 5s ease-in-out;
+    animation-timeline: view();
+    animation-delay: 3s;
+    animation-range: cover 0% cover 100%;
+}
+span#n {
+    animation: scale 5s ease-in-out;
+    animation-timeline: view();
+    animation-delay: 4s;
+    animation-range: cover 0% cover 100%;
+}
+span#_o {
+    animation: scale 5s ease-in-out;
+    animation-timeline: view();
+    animation-delay: 5s;
+    animation-range: cover 0% cover 100%;
+}
+
+div#v4 p {
+    animation: lost 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+
+div#v4 p {
+    animation: lost 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes strongfalse {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(210, 1, 1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        font-size:"";
+    }
+    25% {
+        font-size: calc(var(--tamanhofonte_p) * 0.4);
+    }
+    100% {
+        font-size:"";
+    }
+}
+
+@keyframes lost {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        translate: 0 0;
+    }
 }
