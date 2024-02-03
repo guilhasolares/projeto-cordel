@@ -20,6 +20,57 @@
     url('fontes/HabanaColonial-Bold.otf') format('opentype');
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes strongfalse {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(210, 1, 1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        font-size:"";
+    }
+    25% {
+        font-size: calc(var(--tamanhofonte_p) * 0.4);
+    }
+    100% {
+        font-size:"";
+    }
+}
+
+@keyframes lost {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        translate: 0 0;
+    }
+}
+
+@keyframes mask {
+    from {
+        color: "";
+    }
+    to {
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: 1px white;
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -110,7 +161,7 @@ div#v3 p {
     animation-range: 100%;
 }
 
-span {
+div#v3 > span {
     font-family: var(--fontnormal),monospace;
     margin-right: -20px;
 }
@@ -161,49 +212,22 @@ div#v4 p {
     animation-range: cover 0% cover 100%;
 }
 
-div#v4 p {
-    animation: lost 2s ease-in-out;
+div#v5 p span::after {
+    content: '\00A0';
+}
+
+div#v5 p span {
+    animation: mask 2s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        translate: 0 0;
-    }
+div#v6 p span::after {
+    content: '\00A0';
 }
 
-@keyframes strongfalse {
-    from {
-        color: white;
-    }
-    to {
-        color: rgb(210, 1, 1);
-    }
-}
-
-@keyframes scale {
-    0% {
-        font-size:"";
-    }
-    25% {
-        font-size: calc(var(--tamanhofonte_p) * 0.4);
-    }
-    100% {
-        font-size:"";
-    }
-}
-
-@keyframes lost {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        translate: 0 0;
-    }
+div#v6 p span {
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
 }
