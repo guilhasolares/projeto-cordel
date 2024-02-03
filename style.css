@@ -74,7 +74,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px dashed black;
+    border: 1px dashed white;
 }
 
 :root {
@@ -222,12 +222,125 @@ div#v5 p span {
     animation-range: cover 0% cover 100%;
 }
 
+div#v6 p {
+    text-align: center;
+}
+
 div#v6 p span::after {
     content: '\00A0';
 }
 
-div#v6 p span {
-    animation: appear 2s ease-in-out;
+div#v6 p span#estava {
+    animation: gum_estava 9s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
+}
+div#v6 p span#pegada {
+    animation: gum_pegada 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+div#v6 p span#cara {
+    animation: gum_cara 6s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+}
+
+div#v7 {
+    position: relative;
+}
+
+div#v7 div {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+div#v7 p#direita {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(5%, -50%);
+    width: 45%;
+
+    text-align: left;
+}
+
+div#v7 p#esquerda {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-105%, -50%);
+    width: 45%;
+    text-align: right;
+    opacity: 0.3;
+}
+
+
+@keyframes gum_estava {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: 100px -200px 0px white;
+
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+}
+@keyframes gum_pegada {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: -400px 200px 0px white;
+
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+}
+@keyframes gum_cara {
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        text-shadow: 100px 200px 0px white;
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px0px 0px white;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
