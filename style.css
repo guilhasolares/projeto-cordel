@@ -364,19 +364,59 @@ div#v8 {
     animation-range: cover 0% cover 50%;
 }
 
-/* div#v9 */
+div#v9 p {
+    display: inline-block;
+}
+
+div#v9 #ebado, #bbado, #beado, #bebdo, #bebao, #bebad, #virgula {
+    padding: 0px;
+}
+
+div#v9:not( #estava, #ebado, #bbado, #beado, #bebdo, #bebao, #bebad, #virgula) {
+    text-align: center;
+}
+
+div#v9 p#ebado::before {
+    content: "\00A0";
+}
+
+div#v9 #ebado {        
+    animation: bebado 4s ease-in-out infinite;
+}
+div#v9 #bbado {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+div#v9 #beado {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+div#v9 #bebdo {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+div#v9 #bebao {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+div#v9 #bebad {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+div#v9 #virgula {
+    animation: bebado 4s infinite;
+    animation-delay: 3s;
+}
 
 @keyframes bebado {
     0% {
-        transform: translateX(0px);
-        transform: translateY(0px);
+        transform: translateY(30px);
     }
     50% {
-        transform: translateX(50px);
-        transform: translateY(50px);
+        transform: translateY(0px);
     }
     100% {
-        transform: translateX(0px);
-        transform: translateY(0px);
+        transform: translateY(30px);
     }
 }
