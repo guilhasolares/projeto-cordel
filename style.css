@@ -172,6 +172,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    /* border: 1px dashed white; */
 }
 
 :root {
@@ -203,10 +204,9 @@ body {
 }
 
 header {
-    background-color: var(--cafe);
-    padding-top: 10vh;
-    padding-bottom: 15vh;
-    box-shadow: 0px 5x 5px #533e2dff;
+    background-image: linear-gradient(to bottom, var(--cafe)50%, transparent);
+    padding-top: 25vh;
+    padding-bottom: 20vh;
 }
 header h1 {
     font-family: var(--fontprincipal);
