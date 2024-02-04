@@ -12,9 +12,42 @@
             font-size: 5em;
             -webkit-text-stroke: 3px black;
         }
+
+        @keyframes bebado {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+    }
+
+    p.lorem {
+        display: inline-block;
+    }
+
+    p.lorem  {
+        transform: translateY(0px);
+        animation: bebado 2s ease-in-out infinite;
+    }
     </style>
 </head>
 <body>
     <p>Lorem ipsum</p>
+    
+    
+    
+    <p>
+        <p class="lorem">L</p>
+        <p class="lorem">o</p>
+        <p class="lorem">r</p>
+        <p class="lorem">e</p>
+        <p class="lorem">m</p>
+         
+    </p>
+
+    <img src="imagens/wallpaper001.jpg" alt="fds">
+        
+    
 </body>
 </html>

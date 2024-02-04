@@ -30,6 +30,16 @@
     }
 }
 
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        translate: 0 0;
+    }
+}
+
 @keyframes strongfalse {
     from {
         color: white;
@@ -195,27 +205,26 @@ div#v1 p {
     animation-range: cover 0% cover 50%;
 }
 
+
 div#v2 p {
     animation: appear 2s ease-in-out;
     animation-timeline: view();
     animation-range: 100%;
 }
 
+
 div#v3 p {
     animation: appear 2s ease-in-out;
     animation-timeline: view();
     animation-range: 100%;
 }
-
 div#v3 > span {
     font-family: var(--fontnormal),monospace;
     margin-right: -20px;
 }
-
-span#principal::after {
+span.principal::after {
     content: "\00A0";
 }
-
 span#d {
     animation: scale 5s ease-in-out;
     animation-timeline: view();
@@ -252,30 +261,30 @@ span#_o {
     animation-range: cover 0% cover 100%;
 }
 
+
 div#v4 p {
     animation: lost 2s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
 }
 
+
 div#v5 p span::after {
     content: '\00A0';
 }
-
 div#v5 p span {
     animation: mask 2s ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
 }
 
+
 div#v6 p {
     text-align: center;
 }
-
 div#v6 p span::after {
     content: '\00A0';
 }
-
 div#v6 p span#estava {
     animation: gum_estava 9s ease-in-out;
     animation-timeline: view();
@@ -292,18 +301,18 @@ div#v6 p span#cara {
     animation-range: cover 0% cover 100%;
 }
 
+
 div#v7 {
     position: relative;
 }
-
 div#v7 section {
     
-
-
+    padding: 0px;
+    height: 50%;
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -50% cover 100%;
 }
-
-
-
 div#v7 div {
     position: absolute;
 
@@ -315,10 +324,12 @@ div#v7 div {
     background-color: white;
     padding-top: 20vh;
     padding-bottom: 20vh;
-}
-
+} 
 div#v7 p#direita {
     position: absolute;
+
+    padding-left: 0px;
+    padding-right: 0px;
 
     top: 50%;
     left: 50%;
@@ -328,9 +339,11 @@ div#v7 p#direita {
 
     text-align: left;
 }
-
 div#v7 p#esquerda {
     position: absolute;
+
+    padding-left: 0px;
+    padding-right: 0px;
 
     top: 50%;
     left: 50%;
@@ -338,18 +351,32 @@ div#v7 p#esquerda {
     transform: translate(-105%, -50%);
     width: 45%;
     text-align: right;
-    opacity: 0.3;
+
+    animation: opacity 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
 }
 
 
-@keyframes opacity {
+div#v8 {
+    animation: appear 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+/* div#v9 */
+
+@keyframes bebado {
     0% {
-        opacity: 0;
+        transform: translateX(0px);
+        transform: translateY(0px);
     }
     50% {
-        opacity: 1;
+        transform: translateX(50px);
+        transform: translateY(50px);
     }
     100% {
-        opacity: 0;
+        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
