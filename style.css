@@ -12,6 +12,10 @@
 
 /*font-family: 'M PLUS Rounded 1c', sans-serif;*/
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* font-family: 'Space Mono', monospace; */
+
 @font-face {
     font-family: 'Havana';
     src: 
@@ -21,20 +25,28 @@
 }
 
 @keyframes appear {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    50% {
+        opacity: 1;
+        translate: 0 0;
+    }
+    100% {
         opacity: 1;
         translate: 0 0;
     }
 }
 
 @keyframes opacity {
-    from {
+    0% {
         opacity: 1;
     }
-    to {
+    50% {
+        opacity: 0;
+        translate: 0 0;
+    }
+    100% {
         opacity: 0;
         translate: 0 0;
     }
@@ -126,11 +138,40 @@
     }
 }
 
+@keyframes bebado {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes weak {
+    0% {font-weight: 900;}
+    10% {font-weight: 800;}
+    20% {font-weight: 700;}
+    30% {font-weight: 600;}
+    40% {font-weight: 500;}
+    50% {font-weight: 400;}
+    60% {font-weight: 300;}
+    70% {font-weight: 200;}
+    80% {font-weight: 100;}
+    100% {font-weight: 100;}
+}
 
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px dashed white;
 }
 
 :root {
@@ -309,9 +350,10 @@ div#v7 section {
     
     padding: 0px;
     height: 50%;
-    animation: appear 2s ease-in-out;
+    animation: appear 5s ease-in-out;
     animation-timeline: view();
-    animation-range: cover -50% cover 100%;
+    animation-range: cover -90% cover 100%;
+    animation-delay: 3s;
 }
 div#v7 div {
     position: absolute;
@@ -325,7 +367,11 @@ div#v7 div {
     padding-top: 20vh;
     padding-bottom: 20vh;
 } 
-div#v7 p#direita {
+
+div#v7 section#secesquerda{
+    transform: rotateY(180deg);
+}
+div#v7 section p#direita {
     position: absolute;
 
     padding-left: 0px;
@@ -339,7 +385,7 @@ div#v7 p#direita {
 
     text-align: left;
 }
-div#v7 p#esquerda {
+div#v7 section p#esquerda {
     position: absolute;
 
     padding-left: 0px;
@@ -348,9 +394,9 @@ div#v7 p#esquerda {
     top: 50%;
     left: 50%;
 
-    transform: translate(-105%, -50%);
+    transform: translate(10%, -50%);
     width: 45%;
-    text-align: right;
+    text-align: left;
 
     animation: opacity 2s ease-in-out;
     animation-timeline: view();
@@ -367,56 +413,128 @@ div#v8 {
 div#v9 p {
     display: inline-block;
 }
-
-div#v9 #ebado, #bbado, #beado, #bebdo, #bebao, #bebad, #virgula {
+div#v9 #stava, #etava, #esava, #estva, #estaa, #estav, #ebado, #bbado, #beado, #bebdo, #bebao, #bebad, #virgula {
     padding: 0px;
 }
-
-div#v9:not( #estava, #ebado, #bbado, #beado, #bebdo, #bebao, #bebad, #virgula) {
+div#v9:not( #stava, #etava, #esava, #estva, #estaa, #estav #ebado, #bbado, #beado, #bebdo, #bebao, #bebad, #virgula) {
     text-align: center;
 }
 
+/*ESTAVA*/
+div#v9 #stava {        
+    animation: bebado 4s ease-in-out infinite;
+    transform: translateY(30px);
+}
+div#v9 #etava {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 1s;
+    transform: translateY(30px);
+
+
+}
+div#v9 #esava {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 2s;
+    transform: translateY(30px);
+
+}
+div#v9 #estva {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 3s;
+    transform: translateY(30px);
+
+}
+div#v9 #estaa {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 4s;
+    transform: translateY(30px);
+
+}
+div#v9 #estav {        
+    animation: bebado 4s ease-in-out infinite;
+    animation-delay: 5s;
+    transform: translateY(30px);
+
+}
+
+/* BÊBADO, */
 div#v9 p#ebado::before {
     content: "\00A0";
 }
-
 div#v9 #ebado {        
     animation: bebado 4s ease-in-out infinite;
+    animation-delay: 6s;
+    transform: translateY(30px);
+
+
 }
 div#v9 #bbado {        
     animation: bebado 4s ease-in-out infinite;
-    animation-delay: 0.5s;
+    animation-delay: 7s;
+    transform: translateY(30px);
+
 }
 div#v9 #beado {        
     animation: bebado 4s ease-in-out infinite;
-    animation-delay: 1s;
+    animation-delay: 8s;
+    transform: translateY(30px);
+
 }
 div#v9 #bebdo {        
     animation: bebado 4s ease-in-out infinite;
-    animation-delay: 1.5s;
+    animation-delay: 9s;
+    transform: translateY(30px);
+
 }
 div#v9 #bebao {        
     animation: bebado 4s ease-in-out infinite;
-    animation-delay: 2s;
+    animation-delay: 10s;
+    transform: translateY(30px);
+
 }
 div#v9 #bebad {        
     animation: bebado 4s ease-in-out infinite;
-    animation-delay: 2.5s;
-}
+    animation-delay: 11s;
+    transform: translateY(30px);
 
+}
 div#v9 #virgula {
     animation: bebado 4s infinite;
-    animation-delay: 3s;
+    animation-delay: 12s;
+    transform: translateY(30px);
+
 }
 
-@keyframes bebado {
-    0% {
-        transform: translateY(30px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(30px);
-    }
+div#v10 {
+    font-style: oblique;
+    animation: lost 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
 }
+
+div#v11 p {
+    font-size: calc(var(--tamanhofonte_p) /1.5);
+    font-family: 'Space Mono', monospace;
+    width: 35ch;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: typing 2s steps(35);
+    animation-range: cover 0% cover 50%;
+    animation-timeline: view();
+}
+
+div#v12 p {
+    display: inline-block;
+}
+
+div#v12 p#inofensivo {
+    /* font-family: 'Space Mono', monospace; */
+    font-weight: 900;
+    display: inline-block;
+
+    animation: weak 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+} 
+
