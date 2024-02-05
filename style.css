@@ -204,6 +204,7 @@ strong.false {
 }
 
 body {
+    color: white;
     background-image: url(imagens/smoke.jpg);
     background-size: cover;
     background-attachment: fixed;
