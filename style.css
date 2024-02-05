@@ -66,7 +66,7 @@
         font-size:"";
     }
     25% {
-        font-size: calc(var(--tamanhofonte_p) * 0.4);
+        font-size: calc(var(--tamanhofonte_p) *1.5);
     }
     100% {
         font-size:"";
@@ -95,46 +95,46 @@
 
 @keyframes gum_estava {
     0% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
+        color: rgb(0,0,0);
+        text-shadow: 0px0px 0px black;
     }
     50% {
-        color: rgba(255, 255, 255, 0.1);
-        text-shadow: 100px -200px 0px white;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: 100px -50px 0px black;
 
     }
     100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
+        color: rgb(0,0,0);
+        text-shadow: 0px0px 0px black;
     }
 }
 @keyframes gum_pegada {
     0% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
+        color: black;
+        text-shadow: 0px0px 0px black;
     }
     50% {
-        color: rgba(255, 255, 255, 0.1);
-        text-shadow: -400px 200px 0px white;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: -100px 100px 0px black;
 
     }
     100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
+        color: black;
+        text-shadow: 0px0px 0px black;
     }
 }
 @keyframes gum_cara {
     0% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
+        color: black;
+        text-shadow: 0px0px 0px black;
     }
     50% {
-        color: rgba(255, 255, 255, 0.1);
-        text-shadow: 100px 200px 0px white;
+        color: rgba(0, 0, 0, 0.1);
+        text-shadow: 50px 50px 0px black;
     }
     100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0px0px 0px white;
+        color: black;
+        text-shadow: 0px0px 0px black;
     }
 }
 
@@ -172,7 +172,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* border: 1px dashed white; */
+    border: 1px dashed white;
 }
 
 :root {
@@ -185,9 +185,9 @@
     --fontprincipal: 'Havana', sans-serif;
     --fontnormal: 'M PLUS Rounded 1c', sans-serif;
     
-    --tamanhofonte_h1: 10em;
-    --tamanhofonte_sub: 2em;
-    --tamanhofonte_p: 4em; 
+    --tamanhofonte_h1: 20vw;
+    --tamanhofonte_sub: 3vw;
+    --tamanhofonte_p: 5vw; 
 
 }
 
@@ -229,8 +229,29 @@ header p {
     padding-bottom: 5vh;    
 }
 
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image p:not(#except) {
+    background-color: rgba(184, 138, 74, 0.1);
+    display: inline-block;
+    margin: auto;
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+section.image p#except {
+    background-color: rgba(184, 138, 74, 0.1);
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+}
+
+
 div {
-    padding-top: 30vh;
+    padding-top: 50vh;
     padding-bottom: 50vh;
 }
 
@@ -262,6 +283,7 @@ div#v3 p {
 div#v3 > span {
     font-family: var(--fontnormal),monospace;
     margin-right: -20px;
+
 }
 span.principal::after {
     content: "\00A0";
@@ -370,6 +392,7 @@ div#v7 div {
 
 div#v7 section#secesquerda{
     transform: rotateY(180deg);
+    
 }
 div#v7 section p#direita {
     position: absolute;
@@ -381,7 +404,7 @@ div#v7 section p#direita {
     left: 50%;
 
     transform: translate(5%, -50%);
-    width: 45%;
+    width: 30%;
 
     text-align: left;
 }
@@ -395,7 +418,7 @@ div#v7 section p#esquerda {
     left: 50%;
 
     transform: translate(10%, -50%);
-    width: 45%;
+    width: 30%;
     text-align: left;
 
     animation: opacity 2s ease-in-out;

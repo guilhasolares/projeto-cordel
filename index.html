@@ -18,80 +18,104 @@
     </header>
     <main>
         <article>
-            <div id="v1">
-                <p>Fiz de mim o que não soube</p>
-            </div>
-            <div id="v2">
-                <p>E o que podia fazer de mim <strong class="false">não o fiz.</strong></p>
-            </div>
-            <div id="v3">
-                <p>O <span class="principal">
-                        <span id="d">d</span>
-                        <span id="o">o</span>
-                        <span id="m">m</span>
-                        <span id="i">i</span>
-                        <span id="n">n</span>
-                        <span id="_o">ó</span>
-                </span> que vesti era errado.</p>
-            </div>
-            <div id="v4">
-                <p>Conheceram-me logo por quem não era <br>e não desmenti, e perdi-me.</p>
-            </div>
-            <div id="v5">
-                <p>Quando quis tirar a <span>máscara</span>,</p>
-            </div>
-            <div id="v6">
-                <p>
-                    <span id="estava">Estava</span> 
-                    <span id="pegada">pegada à</span> 
-                    <span id="cara">cara.</span>
-                </p>
-            </div>
-            <div id="v7">
-                <section id="secesquerda">
-                    <p id="esquerda">Quando a tirei e me vi <br>ao espelho,</p>
-                </section>
-                <section>
-                    <p id="direita">Quando a tirei e me vi <br>ao espelho,</p>
-                </section>
-            </div>
-            <div id="v8">
-                <p>Já tinha envelhecido.</p>
-            </div>
-            <div id="v9">
-                    <!-- Palavra estava -->
-                    <p id="stava">E</p>
-                    <p id="etava">s</p>
-                    <p id="esava">t</p>
-                    <p id="estva">a</p>
-                    <p id="estaa">v</p>
-                    <p id="estav">a</p>
-                    <!-- Palavra "bêbado" -->
-                    <span>
-                        <p id="ebado">b</p>
-                        <p id="bbado">ê</p>
-                        <p id="beado">b</p>
-                        <p id="bebdo">a</p>
-                        <p id="bebao">d</p>
-                        <p id="bebad">o</p>
-                        <p id="virgula">,</p> 
-                    </span>
-                    <br>
-                    <p>já não sabia vestir o dominó <br>que não tinha tirado.</p> 
-                    <br>
-            </div>
-            <div id="v10">
-                <p>Deitei fora a máscara e dormi no vestiário</p>
-            </div>
-            <div id="v11">
-                <p>Como um cão tolerado pela gerência.</p>
-            </div>
-            <div id="v12">
-                <p>Por ser <p id="inofensivo">inofensivo</p></p>
-            </div>
-            <div id="v13">
-                <p>E vou escrever esta história <br>para provar que sou sublime.</p>
-            </div>
+            <!-- Envelopar div's em sections para efeito paralaxe -->
+            <section class="normal">
+                <div id="v1">
+                    <p>Fiz de mim o que não soube</p>
+                </div>
+                <div id="v2">
+                    <p>E o que podia fazer de mim <strong class="false">não o fiz.</strong></p>
+                </div>
+            </section>
+            <section class="image">
+                <div id="v3">
+                    <p>O <span class="principal">
+                            <span id="d">d</span>
+                            <span id="o">o</span>
+                            <span id="m">m</span>
+                            <span id="i">i</span>
+                            <span id="n">n</span>
+                            <span id="_o">ó</span>
+                    </span><br>que vesti era errado.</p>
+                </div>
+            </section>
+            <section class="normal">
+                <div id="v4">
+                    <p>Conheceram-me logo por quem não era e não desmenti, e perdi-me.</p>
+                </div>
+            </section>
+            <section class="image">
+                <div id="v5">
+                    <p>Quando quis tirar a <span>máscara</span>,</p>
+                </div>
+            </section>
+            <section class="normal">
+                <div id="v6">
+                    <p>
+                        <span id="estava">Estava</span>
+                        <span id="pegada">pegada à</span>
+                        <span id="cara">cara.</span>
+                    </p>
+                </div>
+                <div id="v7">
+                    <section id="secesquerda">
+                        <p id="esquerda">Quando a tirei e me vi <br>ao espelho,</p>
+                    </section>
+                    <section>
+                        <p id="direita">Quando a tirei e me vi <br>ao espelho,</p>
+                    </section>
+                </div>
+            </section>
+            <section class="image">
+                <div id="v8">
+                    <p>Já tinha envelhecido.</p>
+                </div>
+            </section>
+            <section class="normal">
+                <div id="v9">
+                        <!-- Palavra estava -->
+                        <p id="stava">E</p>
+                        <p id="etava">s</p>
+                        <p id="esava">t</p>
+                        <p id="estva">a</p>
+                        <p id="estaa">v</p>
+                        <p id="estav">a</p>
+                        <!-- Palavra "bêbado" -->
+                        <span>
+                            <p id="ebado">b</p>
+                            <p id="bbado">ê</p>
+                            <p id="beado">b</p>
+                            <p id="bebdo">a</p>
+                            <p id="bebao">d</p>
+                            <p id="bebad">o</p>
+                            <p id="virgula">,</p>
+                        </span>
+                        <br>
+                        <div>
+                            <p>já não sabia vestir o dominó <br>que não tinha tirado.</p>
+                        </div>
+                </div>
+            </section>
+            <section class="image">
+                <div id="v10">
+                    <p>Deitei fora a máscara e dormi no vestiário</p>
+                </div>
+            </section>
+            <section class="normal">
+                <div id="v11">
+                    <p>Como um cão tolerado pela gerência.</p>
+                </div>
+            </section>
+            <section class="image">
+                <div id="v12">
+                    <p id="except">Por ser</p><p id="inofensivo">inofensivo</p>
+                </div>
+            </section>
+            <section class="normal">
+                <div id="v13">
+                    <p>E vou escrever esta história <br>para provar que sou sublime.</p>
+                </div>
+            </section>
             
         </article>
     </main>
