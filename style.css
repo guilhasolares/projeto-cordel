@@ -202,9 +202,10 @@ body {
     background-color: black;
     color: white;
 }
-
+/* suavizar mais o header */
 header {
-    background-image: linear-gradient(to bottom, var(--cafe)50%, transparent);
+    /* background-image: linear-gradient(to bottom, var(--cafe)45%, transparent); */
+    background-color: var(--cafe);
     padding-top: 25vh;
     padding-bottom: 20vh;
 }
@@ -215,8 +216,7 @@ header h1 {
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    text-transform: uppercase;
 }
 header p {
     font-family: var(--fontnormal);
@@ -230,7 +230,7 @@ header p {
 }
 
 div {
-    padding-top: 50vh;
+    padding-top: 30vh;
     padding-bottom: 50vh;
 }
 
