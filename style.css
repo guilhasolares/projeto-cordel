@@ -212,7 +212,7 @@ body {
 /* suavizar mais o header */
 header {
     /* background-image: linear-gradient(to bottom, var(--cafe)45%, transparent); */
-    background-color: var(--cafe);
+    background-image: linear-gradient(to bottom, black, var(--cafe) 90%, white 99%);
     padding-top: 25vh;
     padding-bottom: 20vh;
 }
@@ -592,4 +592,8 @@ div#v12 p#inofensivo {
     animation-timeline: view();
     animation-range: cover 0% cover 100%;
 } 
+
+footer{
+    text-align: center;
+}
 
