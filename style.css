@@ -115,7 +115,7 @@
     }
     50% {
         color: rgba(0, 0, 0, 0.1);
-        text-shadow: -100px 100px 0px black;
+        text-shadow: -50px 50px 0px black;
 
     }
     100% {
@@ -130,7 +130,7 @@
     }
     50% {
         color: rgba(0, 0, 0, 0.1);
-        text-shadow: 50px 50px 0px black;
+        text-shadow: 20px 100px 0px black;
     }
     100% {
         color: black;
@@ -141,12 +141,17 @@
 @keyframes bebado {
     0% {
         transform: translateY(30px);
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
     }
     50% {
         transform: translateY(0px);
+        text-shadow: 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+
     }
     100% {
         transform: translateY(30px);
+        text-shadow: 0px -10px 0px rgba(0, 0, 0, 0.9);
     }
 }
 
@@ -172,7 +177,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 }
 
 :root {
@@ -199,8 +204,9 @@ strong.false {
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-image: url(imagens/smoke.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 /* suavizar mais o header */
 header {
@@ -229,30 +235,36 @@ header p {
     padding-bottom: 5vh;    
 }
 
+section {
+    background-attachment: fixed;
+}
+
 section.normal {
     background-color: white;
     color: black;
 }
 
-section.image p:not(#except) {
-    background-color: rgba(184, 138, 74, 0.1);
+section.image p:not(.except) {
+    background-color: rgba(184, 138, 74, 0.8);
     display: inline-block;
     margin: auto;
     border-top-right-radius: 20px;
     padding: 10px;
+    box-shadow: -3px 10px 9px rgba(0, 0, 0, 0.5);
 }
 
-section.image p#except {
-    background-color: rgba(184, 138, 74, 0.1);
+section.image p.except {
+    background-color: rgba(184, 138, 74, 0.8);
     display: inline-block;
     margin: auto;
     padding: 10px;
+
 }
 
 
 div {
-    padding-top: 50vh;
-    padding-bottom: 50vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
 }
 
 div p {
@@ -274,6 +286,12 @@ div#v2 p {
     animation-range: 100%;
 }
 
+div#v3 {
+    background-image: url(imagens/domino.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 
 div#v3 p {
     animation: appear 2s ease-in-out;
@@ -331,6 +349,13 @@ div#v4 p {
     animation-range: cover 0% cover 100%;
 }
 
+div#v5 {
+    background-image: url(imagens/mascara.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
 
 div#v5 p span::after {
     content: '\00A0';
@@ -421,16 +446,20 @@ div#v7 section p#esquerda {
     width: 30%;
     text-align: left;
 
-    animation: opacity 2s ease-in-out;
+    /* animation: opacity 2s ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 100%;
+    animation-range: cover 0% cover 100%; */
 }
 
 
 div#v8 {
-    animation: appear 2s ease-in-out;
+    background-image: url(imagens/old.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    /* animation: appear 2s ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    animation-range: cover 0% cover 50%; */
 }
 
 div#v9 p {
@@ -445,36 +474,36 @@ div#v9:not( #stava, #etava, #esava, #estva, #estaa, #estav #ebado, #bbado, #bead
 
 /*ESTAVA*/
 div#v9 #stava {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     transform: translateY(30px);
 }
 div#v9 #etava {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 1s;
     transform: translateY(30px);
 
 
 }
 div#v9 #esava {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 2s;
     transform: translateY(30px);
 
 }
 div#v9 #estva {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 3s;
     transform: translateY(30px);
 
 }
 div#v9 #estaa {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 4s;
     transform: translateY(30px);
 
 }
 div#v9 #estav {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 5s;
     transform: translateY(30px);
 
@@ -485,44 +514,44 @@ div#v9 p#ebado::before {
     content: "\00A0";
 }
 div#v9 #ebado {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 6s;
     transform: translateY(30px);
 
 
 }
 div#v9 #bbado {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 7s;
     transform: translateY(30px);
 
 }
 div#v9 #beado {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 8s;
     transform: translateY(30px);
 
 }
 div#v9 #bebdo {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 9s;
     transform: translateY(30px);
 
 }
 div#v9 #bebao {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 10s;
     transform: translateY(30px);
 
 }
 div#v9 #bebad {        
-    animation: bebado 4s ease-in-out infinite;
+    animation: bebado 4s ease-in-out infinite alternate;
     animation-delay: 11s;
     transform: translateY(30px);
 
 }
 div#v9 #virgula {
-    animation: bebado 4s infinite;
+    animation: bebado 4s infinite alternate;
     animation-delay: 12s;
     transform: translateY(30px);
 
@@ -549,12 +578,14 @@ div#v11 p {
 
 div#v12 p {
     display: inline-block;
+    font-weight: bold;
 }
 
 div#v12 p#inofensivo {
     /* font-family: 'Space Mono', monospace; */
     font-weight: 900;
     display: inline-block;
+    padding-left: 0px;
 
     animation: weak 5s ease-in-out;
     animation-timeline: view();
