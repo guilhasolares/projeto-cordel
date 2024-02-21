@@ -190,7 +190,7 @@
     --fontprincipal: 'Havana', sans-serif;
     --fontnormal: 'M PLUS Rounded 1c', sans-serif;
     
-    --tamanhofonte_h1: 20vw;
+    --tamanhofonte_h1: 15vw;
     --tamanhofonte_sub: 3vw;
     --tamanhofonte_p: 5vw; 
 
@@ -211,10 +211,9 @@ body {
 }
 /* suavizar mais o header */
 header {
-    /* background-image: linear-gradient(to bottom, var(--cafe)45%, transparent); */
-    background-image: linear-gradient(to bottom, black, var(--cafe) 90%, white 99%);
-    padding-top: 25vh;
-    padding-bottom: 20vh;
+    background-image: linear-gradient(to bottom, black, var(--cafe) 90%);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 header h1 {
     font-family: var(--fontprincipal);
@@ -232,8 +231,8 @@ header p {
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;    
+    padding-top: 30px;
+    padding-bottom: 30px;    
 }
 
 section {
@@ -264,8 +263,8 @@ section.image p.except {
 
 
 div {
-    padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding-top: 10vh;
+    padding-bottom:40vh;
 }
 
 div p {
